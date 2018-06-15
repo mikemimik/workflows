@@ -1,0 +1,27 @@
+{
+  "name": "workflows",
+  "version": "1.0.0",
+  "description": "GitHub workflows created and managed by the probot framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikemimik/workflows.git"
+  },
+  "keywords": [
+    "probot",
+    "workflows",
+    "github",
+    "productivity",
+    "process",
+    "management"
+  ],
+  "author": "Michael Perrotte <mike@mikecrop.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikemimik/workflows/issues"
+  },
+  "homepage": "https://github.com/mikemimik/workflows#readme"
+}
