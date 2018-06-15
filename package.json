@@ -23,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/mikemimik/workflows/issues"
   },
-  "homepage": "https://github.com/mikemimik/workflows#readme"
+  "homepage": "https://github.com/mikemimik/workflows#readme",
+  "dependencies": {
+    "probot": "^6.2.0"
+  },
+  "devDependencies": {
+    "semistandard": "github:mikemimik/semistandard"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  }
 }
