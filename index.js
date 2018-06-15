@@ -2,10 +2,16 @@
 
 const fs = require('fs');
 
-const tasks = fs.readdirSync(`${__dirname}/tasks`, 'utf8');
+const files = fs.readdirSync(`${__dirname}/tasks`, 'utf8');
+
+const tasks = files.reduce((acc, file) => {
+  const filename = file.split('.')[0];
+  acc[filename] = require(`./tasks/${filename}`);
+  return acc;
+}, {});
 
 module.exports = (app) => {
-  tasks.forEach((task) => {
-    task(app);
+  Object.keys(tasks).forEach((task) => {
+    tasks[task](app);
   });
 };
