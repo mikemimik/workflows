@@ -1,0 +1,27 @@
+---
+states:
+  - name: backlog
+    links:
+      - state: todo
+  - name: todo
+    links:
+      - state: in-progress
+      - state: gathering-requirements
+      - state: backlog
+  - name: stalled
+    links:
+      - state: in-progress
+      - state: backlog
+  - name: gathering-requirements
+    links:
+      - state: in-progress
+      - state: todo
+  - name: in-progress
+    links:
+      - state: in-review
+      - state: stalled
+  - name: in-review
+    links:
+      - state: done
+      - state: in-progress
+  - name: done
